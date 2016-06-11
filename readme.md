@@ -91,5 +91,6 @@
 	+ Add
 		+ Options FollowSymLinks
 	+ sudo service apache2 restart
+	
 ###4. Change Permissions to Allow Access
 		+ sudo chown -R UserName /var/www
