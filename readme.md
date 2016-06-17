@@ -3,7 +3,7 @@
 ##New Server Procedure
 
 ###1.Create Server
-+ Configured to the Development Guidelines specifications for this class
++ Configured Digital Ocean 
 
 ###2. SSH Into the Server
 + ssh root@Server_IP_Address
