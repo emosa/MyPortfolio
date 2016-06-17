@@ -1,6 +1,6 @@
 #Portfolio Deployment Plan
 
-##New Server Procedure
+##Server Procedure
 
 ###1.Create Server
 + Configured Digital Ocean 
