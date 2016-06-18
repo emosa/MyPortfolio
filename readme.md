@@ -1,98 +1,27 @@
-#Portfolio Deployment Plan
+# [Start Bootstrap](http://startbootstrap.com/) - [Creative](http://startbootstrap.com/template-overviews/creative/)
 
-##Server Procedure
+[Creative](http://startbootstrap.com/template-overviews/creative/) is a one page creative theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-###1.Create Server
-+ Configured Digital Ocean 
+## Getting Started
 
-###2. SSH Into the Server
-+ ssh root@Server_IP_Address
-+ Enter password
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/creative/)
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-creative.git`
+* Fork the repo
 
-###3. Create Non-Root User
-+ adduser Username
-+ adduser Username sudo
+## Bugs and Issues
 
-###4. End SSH Session
-+ exit
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-creative/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/creative/).
 
-###5. Login as Non-Root User
-+ ssh Username@Server_IP_Address
-+ Enter password
+## Creator
 
-###6. Update Package System
-+ sudo apt-get update
-+ Enter password
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-###7. Upgrade Package System
-+ sudo apt-get upgrade
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-###8. Update Packages for Newly Installed Version
-+ sudo apt-get update
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-###9. Update System level Packages
-+ sudo aptitude update
-+ sudo aptitude safe-upgrade
-+ sudo reboot
+## Copyright and License
 
-###10. Install Packages
-+ Git
-	+ See Git: Install & Config
-+ Apache
-	+ See Apache Install & Config
-
-##Git: Install & Config
-
-###1. Install Git
-+ sudo apt-get install git-core
-
-###2. Configure Git
-+ git config --global user.name “NAME”
-+ git config --global user.email Your@Email.com
-
-###3. Confirm Settings
-+ git config --list
-
-###4. Create SSH Keys for Github Access
-+ ssh-keygen -t rsa -C ”YourEmail@example.com”
-	+ This will ask if you want to customize the name, you don’t. Just press enter.
-+ Enter a passphrase
-+ Re-enter the passphrase
-
-###5. Put the RSA key on file with github.com so this server is treated as a trusted machine.
-+ less ~/.ssh/id_rsa.pub
-	+Copy ALL of the contents of this file to your clipboard.
-+ Add new SSH Key to your Github account under the Account Settings.
-	+ Click the Add Key button
-	+ Enter a title defining the server
-	+ Paste the RSA file’s contents into text area marked “Key”
-	+ Click Add Key
-
-## Apache Install & Config
-###1. Install Apache 2
-+ sudo apt-get install apache2
-
-###2. Configure ServerName
-+ Restart Server
-	+ sudo service apache2 restart
-+ Failed to Restart
-	+ apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
-
-+ Configure ServerName
-	+ sudo pico /etc/apache2/conf.d/security
-		+ Add
-			+ ServerName localhost
-	+ sudo service apache2 restart
-	+ Apache should report a successful restart
-
-###3. Restrict Access
-+ sudo pico /etc/apache2/conf.d/security
-	+ Uncomment <Directory />
-	+ Add
-		+ Options FollowSymLinks
-	+ sudo service apache2 restart
-
-###4. Change Permissions to Allow Access
-		+ sudo chown -R UserName /var/www
-
-		
+Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-creative/blob/gh-pages/LICENSE) license.
