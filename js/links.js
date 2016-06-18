@@ -9,7 +9,7 @@ $('#link4').attr('href','http://emosa.github.io/rmo/FinalProject.html');
 
 $('#link5').attr('href','http://emosa.github.io/WIA/Morales_Santiago_Elimarie_The_Project/index.html');
 
-$('#link5').attr('href','http://emosa.github.io/WSP/site/index.html');
+$('#link6').attr('href','http://emosa.github.io/WSP/site/index.html');
 
 
 
